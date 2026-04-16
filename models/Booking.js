@@ -6,6 +6,6 @@ const bookingSchema = new mongoose.Schema({
   room: String,
   checkIn: Date,
   checkOut: Date
-});
+},{timestamps: true});
 
 export default mongoose.model("Booking", bookingSchema);
